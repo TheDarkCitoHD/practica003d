@@ -1,0 +1,114 @@
+/* Estilos Generales y Fondo */
+body {
+    /* Fondo degradado suave (similar a la imagen) */
+    background: linear-gradient(to bottom, #d6eaff, #a9c9ff);
+    font-family: Arial, sans-serif; /* Fuente legible y común */
+    color: #333; /* Color de texto principal */
+    margin: 0; /* Elimina el margen predeterminado del body */
+    padding: 20px 0; /* Añade un poco de padding superior e inferior */
+    text-align: center; /* Centra todo el contenido */
+}
+
+/* Contenedor principal para limitar el ancho y centrar */
+.main-container {
+    max-width: 900px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para destacar el contenido */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para Títulos Principales */
+h1 {
+    font-size: 2.5em;
+    color: #004080; /* Azul oscuro para títulos */
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Sombra para resaltar */
+}
+
+/* Estilo para Títulos de Secciones (Nuestros integrantes, Secciones de ayuda) */
+h2 {
+    font-size: 2em;
+    color: #0056b3;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    border-bottom: 3px solid #007bff; /* Línea de separación bajo el título */
+    display: inline-block; /* Para que la línea solo cubra el ancho del texto */
+    padding-bottom: 5px;
+}
+
+/* Estilo para la imagen del encabezado (Perro y Gato) */
+.header-image img {
+    width: 200px; /* Tamaño fijo para la imagen de cabecera */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Estilo para el texto descriptivo */
+.texto-descripcion {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 600px; /* Limita el ancho del texto para mejor lectura */
+    color: #555;
+    padding: 0 15px;
+}
+
+/* Lista de Integrantes */
+.integrantes-list {
+    list-style: none; /* Quitar las viñetas predeterminadas */
+    padding: 0;
+    margin: 15px 0 30px 0;
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+.integrantes-list li {
+    margin: 5px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.integrantes-list li:before {
+    content: "🐾 "; /* Icono de pata como viñeta */
+    color: #007bff;
+    font-weight: normal;
+}
+
+/* Imagen de Integrantes (el grupo de personas) */
+.team-image img {
+    width: 180px;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Contenedor de las Secciones de Ayuda (Imágenes de menú) */
+.secciones-container {
+    display: flex; /* Habilita Flexbox para alinear elementos */
+    justify-content: center; /* Centra horizontalmente los elementos hijos */
+    gap: 30px; /* Espacio entre las imágenes */
+    margin-top: 30px;
+}
+
+.secciones-container a {
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: transform 0.3s ease; /* Transición suave para el efecto hover */
+    display: block; /* Necesario para que la transformación funcione bien */
+}
+
+.secciones-container a:hover {
+    transform: scale(1.05); /* Efecto de crecimiento al pasar el ratón */
+}
+
+.secciones-container img {
+    width: 250px; /* Ancho de las imágenes de sección */
+    height: auto;
+    border: 5px solid #fff; /* Borde blanco para destacar */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    display: block; /* Elimina espacio extra debajo de las imágenes */
+}
